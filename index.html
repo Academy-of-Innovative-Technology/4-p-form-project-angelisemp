@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <HTML>
     <head>
-
+<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4.6 datalist tags</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
 
 <body>
-    <form name="example" action="#" method="POST">
-        <fieldset>
-<br>
+    <h1>Pizza Form</h1>
+    <fieldset>
+            <legend>Personalized Pizza</legend>
+            <form name="Pizza" action="#" method="POST">
+      <label for="fullname" required > Type your name for the order:</label> <br>
+      <input name="fullname" type="text"> 
+      <br>
+      <br>
 <label for="pizza">Select your Dish:</label>
         <br>
 <label>Pizza Slice</label> <input type="checkbox" id="crust" list="crust" name="crust">
-<label>Whole Pizza</label> <input type="checkbox" id="crust" list="crust" name="crust"> 
+<label>Whole Pizza</label> <input type="checkbox" id="crust" list="crust" name="crust">
+<br>
+
+<br> <label for="dough">Select or type your Pizza Crust:</label>
         <br>
-         <datalist id="crust">
-    <option value="Regular">
-    <option value="Thin">
-    <option value="Cheese">
-    <option value="Deep-dish">
-    <option value="Gluten free">
-        </datalist>
+        <input name="crust" id="crust" list="crust_list"> <br>
+         <datalist id="crust_list" list="crust">
+            <option value="Regular"></option>
+            <option value="Thin"></option>
+            <option value="Cheese"></option>
+            <option value="Deep-dish"></option>
+            <option value="Gluten free"></option>
+         </datalist>
         <br>
 
-<label for="dough">Select or type your Pizza Crust:</label>
+    <label for="toppings">Select or type your Pizza Toppings:</label>
         <br>
-        <input type="text" id="crust" list="crust" name="crust"> <br>
-         <datalist id="crust">
-    <option value="Regular">
-    <option value="Thin">
-    <option value="Cheese">
-    <option value="Deep-dish">
-    <option value="Gluten free">
-        </datalist>
-
-            <br>
-            <legend>Personalized Pizza</legend>
-        <label for="toppings">Select or type your Pizza Toppings:</label>
-        <br>
-        <input type="text" id="toppings" list="toppings" name="toppings"> <br>
+        <input name="toppings" list="toppings_list" id="toppings"/> <br>
         <br>
         <input type="submit" value="Submit">
          <br>
-         <datalist id="toppings">
-    <option value="Pepperoni">
-    <option value="Ham and Pineapple">
-    <option value="Bacon">
-    <option value="Sausage">
-    <option value="Chicken">
-    <option value="Peppers"></option>
-    <option value="Mushroom"></option>
-    <option value="Onions"></option>
+         <datalist id="toppings_list">
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Ham and Pineapple"></option>
+            <option value="Bacon"></option>
+            <option value="Sausage"></option>
+            <option value="Chicken"></option>
+            <option value="Peppers"></option>
+            <option value="Mushroom"></option>
+            <option value="Onions"></option>
         </datalist>
 
          </fieldset>

@@ -1,7 +1,12 @@
 body {
-
+color: rgb(255, 36, 36);
 }
 
 fieldset {
+background-color: rgb(214, 214, 214);
+}
 
+legend {
+    font-size: larger;
+font-weight: bold;
 }
