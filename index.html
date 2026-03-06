@@ -8,19 +8,30 @@
     </head>
 
 <body>
+    <div>
     <h1>Pizza Form</h1>
+    <h2>Sign In:</h2>
+    <form name="Pizza" action="#" method="POST">
+      <label for="fullname" required> Type your name for the order:</label> <br>
+      <input name="fullname" type="text"> <br>
+      <br>
+    <label for="password" required> Enter your password:</label> <br>
+    <input name="address" type="password"> <br>
+
+      <br>
     <fieldset>
             <legend>Personalized Pizza</legend>
-            <form name="Pizza" action="#" method="POST">
-      <label for="fullname" required > Type your name for the order:</label> <br>
-      <input name="fullname" type="text"> 
       <br>
+       <label for="email" required > Type your email for the order:</label> <br>
+      <input name="email" type="email"> 
+      <br>
+
       <br>
 <label for="pizza">Select your Dish:</label>
-        <br>
-<label>Pizza Slice</label> <input type="checkbox" id="crust" list="crust" name="crust">
-<label>Whole Pizza</label> <input type="checkbox" id="crust" list="crust" name="crust">
-<br>
+      <br>
+<label>Pizza Slice</label> <input type="radio" id="crust" list="crust" name="crust">
+<label>Whole Pizza</label> <input type="radio" id="crust" list="crust" name="crust">
+      <br>
 
 <br> <label for="dough">Select or type your Pizza Crust:</label>
         <br>
@@ -50,10 +61,9 @@
             <option value="Mushroom"></option>
             <option value="Onions"></option>
         </datalist>
-
-         </fieldset>
-    </form>
-
+        </fieldset>
+        </form>
+        </div>
 </body>
 </HTML>
 
