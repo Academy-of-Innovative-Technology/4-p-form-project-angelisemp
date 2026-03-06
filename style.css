@@ -12,6 +12,7 @@ color: rgb(255, 36, 36);
 }
 
 fieldset {
+    display: none;
 background-color: rgb(214, 214, 214);
 }
 
